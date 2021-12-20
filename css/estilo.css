@@ -9,14 +9,14 @@ background-color: white;
 header{
  width: 100%;
  overflow: hidden;
- background-image: radial-gradient(circle at -20.44% 56.16%, #9d64ff 0, #7550ff 25%, #3c3cf2 50%, #002ae1 75%, #001fd3 100%);
+ background-image: radial-gradient(circle at -20.71% 50%, #e074ff 0, #b25aff 25%, #783cf2 50%, #1523de 75%, #0017cd 100%);
  margin-bottom: 20px;
 }
 header .logo{
     float: left;
     font-size: 50px;
     font-family: 'Exo', sans-serif;
-   color: rgb(0, 0, 0);
+   color: rgb(85, 80, 80);
    line-height: 200px;
    text-decoration: none;
 }
