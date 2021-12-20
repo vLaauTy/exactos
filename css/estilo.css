@@ -4,34 +4,27 @@
     box-sizing: border-box;
 }
 body{
-background-color: white;
+    background-image: linear-gradient(170deg, #beffff 0, #87dcff 25%, #3cb5f2 50%, #0090d6 75%, #006fbd 100%);
 }
 header{
  width: 100%;
  overflow: hidden;
- background-image: radial-gradient(circle at -20.44% 56.16%, #9d64ff 0, #7550ff 25%, #3c3cf2 50%, #002ae1 75%, #001fd3 100%);
- margin-bottom: 20px;
+ padding: 50px;
 }
+
 header .logo{
     float: left;
     font-size: 50px;
     font-family: 'Exo', sans-serif;
-   color: rgb(0, 0, 0);
-   line-height: 200px;
+   color: rgb(255, 255, 255);
+   margin-left: 20px;
    text-decoration: none;
 }
-header nav{
-    float: right;
-    line-height: 200px;
-}
-header nav a{
-    display: inline-block;
-    color: white;
-    text-decoration: none;
-    padding: 10px 20px;
-    line-height: normal;
+
+.nav-edit{
+    margin-right: 13%;
     font-size: 20px;
-    font-weight: bold;
+    font-family: 'Shippori Antique', sans-serif
 }
 .menu{
     width: 90%;
@@ -64,7 +57,6 @@ main{
     width: 100%;
     margin: auto;
     overflow: hidden;
-    background-image: radial-gradient(circle at 50% 120.71%, #9652ff 0, #6d47ff 25%, #3c3cf2 50%, #0031d7 75%, #0027bd 100%);
 }
 
 /* estilo del index */
@@ -79,7 +71,7 @@ main{
     grid-template-columns:repeat(3, 1fr);
     grid-template-rows: repeat(5, 1fr);
     gap: 30px;
-    grid-row-gap: 100px;
+    grid-row-gap: 150px;
     grid-template-areas: 
     "banner banner banner2"
     "banner banner banner2"
@@ -124,7 +116,7 @@ main{
 }
 
 .info1{
-    background-image: radial-gradient(circle at 56.16% 120.44%, #ec67ff 0, #9b53ff 25%, #3c3cf2 50%, #0026ba 75%, #001587 100%);
+    background-image: linear-gradient(170deg, #00ffff 0, #00f7ff 25%, #3cb5f2 50%, #3e789f 75%, #304558 100%);
     grid-area: info1;
     display: flex;
     flex-direction: column;
@@ -141,7 +133,7 @@ main{
 }
 
 .info2{
-    background-image: radial-gradient(circle at 56.16% 120.44%, #ec67ff 0, #9b53ff 25%, #3c3cf2 50%, #0026ba 75%, #001587 100%);
+    background-image: linear-gradient(170deg, #00ffff 0, #00f7ff 25%, #3cb5f2 50%, #3e789f 75%, #304558 100%);
     grid-area: info2;
     display: flex;
     flex-direction: column;
@@ -154,7 +146,7 @@ main{
 }
 
 .info3{
-    background-image: radial-gradient(circle at 56.16% 120.44%, #ec67ff 0, #9b53ff 25%, #3c3cf2 50%, #0026ba 75%, #001587 100%);
+    background-image: linear-gradient(170deg, #00ffff 0, #00f7ff 25%, #3cb5f2 50%, #3e789f 75%, #304558 100%);
     grid-area: info3;
     display: flex;
     flex-direction: column;
