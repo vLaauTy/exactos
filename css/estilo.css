@@ -1,0 +1,488 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+background-color: white;
+}
+header{
+ width: 100%;
+ overflow: hidden;
+ background-color: rgb(68, 42, 219);
+ margin-bottom: 20px;
+}
+header .logo{
+    float: left;
+    font-size: 50px;
+    font-family: 'Exo', sans-serif;
+   color: rgb(85, 80, 80);
+   line-height: 200px;
+   text-decoration: none;
+}
+header nav{
+    float: right;
+    line-height: 200px;
+}
+header nav a{
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    line-height: normal;
+    font-size: 20px;
+    font-weight: bold;
+}
+.menu{
+    width: 90%;
+    max-width: 1000px;
+    overflow: hidden;
+    margin: auto;
+}
+
+footer{
+    background-color:rgba(6, 17, 9, 0.877);
+    width: 100%;
+    padding: 50px 0px;
+    margin: auto;
+    margin-top: 40px;
+    color: white;
+    margin: auto;
+    text-decoration: none;
+}
+.redes{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+footer a .fab{
+    font-size: 20px;
+}
+
+main{
+    width: 100%;
+    margin: auto;
+    overflow: hidden;
+    background-image: radial-gradient(circle at 50% 120.71%, #9652ff 0, #6d47ff 25%, #3c3cf2 50%, #0031d7 75%, #0027bd 100%);
+}
+
+/* estilo del index */
+
+.gridPadre{
+    width: 90%;
+    height: 1700px;
+    font-family: 'Exo', sans-serif;
+    color: rgb(0, 0, 0);
+    margin: auto;
+    display: grid;
+    grid-template-columns:repeat(3, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    gap: 30px;
+    grid-row-gap: 100px;
+    grid-template-areas: 
+    "banner banner banner2"
+    "banner banner banner2"
+    "info1 info2 info3"
+    "info1 info2 info3"
+    "ads ads ads"
+    ;
+}
+
+.banner{
+    grid-area: banner;
+    background-image: url(../media/3592452.jpg);
+    overflow: hidden;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-radius: 40px;
+    flex-wrap: wrap;
+}
+
+
+.banner h1{
+    text-align: center;
+}
+
+.banner2{
+    background-image: url(../media/3592452.jpg);
+    grid-area: banner2;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-radius: 40px;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.info1{
+    background-image: radial-gradient(circle at 56.16% 120.44%, #ec67ff 0, #9b53ff 25%, #3c3cf2 50%, #0026ba 75%, #001587 100%);
+    grid-area: info1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    border-radius: 40px;
+    color: white;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.info1:hover{
+    border-radius: 20px solid black;
+}
+
+.info2{
+    background-image: radial-gradient(circle at 56.16% 120.44%, #ec67ff 0, #9b53ff 25%, #3c3cf2 50%, #0026ba 75%, #001587 100%);
+    grid-area: info2;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    border-radius: 40px;
+    color: white;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.info3{
+    background-image: radial-gradient(circle at 56.16% 120.44%, #ec67ff 0, #9b53ff 25%, #3c3cf2 50%, #0026ba 75%, #001587 100%);
+    grid-area: info3;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    border-radius: 40px;
+    color: white;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.ads{
+    grid-area: ads;
+    font-family: 'Titan One', cursive;
+    font-size: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: rgb(0, 0, 0);
+}
+
+.titulo{
+    font-family: 'Montserrat', sans-serif;  color: white;
+    font-size: 90px;
+    transition: all 3s ease;
+}
+
+.subtitulo{
+    font-family: 'Montserrat', sans-serif;
+    color:white;
+    font-size: 60px;
+    transition: all 3s ease;
+}
+
+
+.info1 img{
+    width: 100px;
+    height: 100px;
+}
+
+.info2 img{
+    width: 100px;
+    height: 100px;
+}
+
+.info3 img{
+    width: 100px;
+    height: 100px;
+}
+
+.ads img{
+    width: 100px;
+    height: 100px;
+}
+
+
+/* Fin del estilo del index */
+
+/* Estilo de materias */
+
+.contenedorMaterias{
+    width: 100%;
+    height: 2000px;
+    font-family: 'Exo', sans-serif;
+    color: rgb(0, 0, 0);
+    display: grid;
+    grid-template-columns:repeat(3, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-row-gap: 100px;
+    grid-template-areas: 
+    "pres pres pres"
+    "texto texto foto"
+    "foto2 texto2 texto2"
+    "texto3 texto3 foto3"
+    "end end end"
+    ;
+}
+
+.pres{
+    grid-area: pres;
+    font-family: 'Titan One', cursive;
+    font-size: 70px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+    padding:  300px;
+}
+.texto{
+    grid-area: texto;
+    font-family: 'Titan One', cursive;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+}
+.foto{
+     background-image: url(../media/mathsp.png);
+     grid-area: foto;
+     background-repeat: no-repeat;
+ }
+
+ .texto2{
+    grid-area: texto2;
+    font-family: 'Titan One', cursive;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+}
+.foto2{
+     background-image: url(../media/quimicap.png);
+     grid-area: foto2;
+     background-repeat: no-repeat;
+     width: 268px;
+     height: 300px;
+     margin-left: 30px;
+ }
+
+ .texto3{
+    grid-area: texto3;
+    font-family: 'Titan One', cursive;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+}
+.foto3{
+     background-image: url(../media/fisica2.png);
+     grid-area: foto3;
+     background-repeat: no-repeat;
+     width: 268px;
+     height: 300px;
+     margin-left: 30px;
+ }
+
+ .end{
+     grid-area: end;
+     font-family: 'Titan One', cursive;
+     font-size: 50px;
+     display: flex;
+     flex-direction: row;
+     justify-content: center;
+     align-items: center;
+     margin-bottom: 30px;
+ }
+
+ 
+
+/* Fin estilo de materias */
+
+/* Estilo de contacto */
+.form{
+    width: 700px;
+    height: 700px;
+    overflow: hidden;
+    border: 3px black solid;
+    margin: auto;
+    border-radius: 20px;
+}
+legend{
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Exo', sans-serif;
+}
+/* Fin estilo de contacto */
+
+/* Estilo de faq */
+
+.caja{
+    width: 90%;
+    height: auto;
+    margin: auto;
+    overflow: hidden;
+    border: 1px black solid;
+    border-radius: 15px;
+    display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   align-content: flex-start;
+}
+.p1{
+    width: 50%;
+    height: 300px;
+    background-color: tomato;
+    text-align: center;
+}
+.p2{
+    width: 50%;
+    height: 300px;
+    background-color: rgb(208, 240, 92);
+}
+.p3{
+    width: 50%;
+    height: 300px;
+    background-color: chocolate;
+}
+.p4{
+    width: 50%;
+    height: 300px;
+    background-color: rgb(184, 197, 134);
+}
+.p5{
+    width: 50%;
+    height: 300px;
+    background-color: rgb(113, 253, 230);
+}
+.p6{
+    width: 50%;
+    height: 300px;
+    background-color: rgb(190, 120, 69);
+}
+
+/*medias querrys*/
+@media only screen and (max-width: 768px){
+    .contenedorMaterias{
+       width: 100%;
+       height: 1440px;
+       font-family: 'Exo', sans-serif;
+       color: rgb(0, 0, 0);
+       display: grid;
+       grid-template-columns:repeat(3, 1fr);
+       grid-template-rows: repeat(4, 1fr);
+       gap: 10px;
+       grid-template-areas: 
+       "pres pres pres"
+       "foto foto foto"
+       "texto texto texto"
+       "end end end"
+       ;
+    }
+    .gridPadre{
+       width: 100%;
+       height: 1700px;
+       font-family: 'Exo', sans-serif;
+       color: rgb(0, 0, 0);
+       display: grid;
+       grid-template-columns:repeat(3, 1fr);
+       grid-template-rows: repeat(7, 1fr);
+       gap: 40px;
+       grid-template-areas: 
+       "banner banner banner"
+       "banner banner banner"
+       "banner2 banner2 banner2"
+       "info1 info1 info1"
+       "info2 info2 info2"
+       "info3 info3 info3"
+       "ads ads ads"
+    }
+    .titulo{
+       font-family: 'Montserrat', sans-serif;  color: rgb(0, 0, 0);
+       font-size: 30px;
+   }
+   .subtitulo{
+       font-family: 'Montserrat', sans-serif;
+       color: rgb(0, 0, 0);
+       font-size: 20px;
+   }
+   .info1 img{
+       width: 40%;
+       height: 40%;
+   }
+   
+   .info2 img{
+       width: 40%;
+       height: 40%;
+   }
+   
+   .info3 img{
+       width: 40%;
+       height: 40%;
+   }
+   .caja{
+    width: 90%;
+    height: auto;
+    margin: auto;
+    overflow: hidden;
+    border: 1px black solid;
+    border-radius: 15px;
+    display: flex;
+   flex-direction: column;
+   flex-wrap: wrap;
+   align-content: flex-start;
+}
+.p1{
+    width: 100%;
+    height: 300px;
+    background-color: tomato;
+    text-align: center;
+}
+.p2{
+    width: 100%;
+    height: 300px;
+    background-color: rgb(208, 240, 92);
+}
+.p3{
+    width: 100%;
+    height: 300px;
+    background-color: chocolate;
+}
+.p4{
+    width: 100%;
+    height: 300px;
+    background-color: rgb(184, 197, 134);
+}
+.p5{
+    width: 100%;
+    height: 300px;
+    background-color: rgb(113, 253, 230);
+}
+.p6{
+    width: 100%;
+    height: 300px;
+    background-color: rgb(190, 120, 69);
+}
+.form{
+    width: 500px;
+    height: 700px;
+    overflow: hidden;
+    border: 3px black solid;
+    margin: auto;
+    border-radius: 20px;
+}
+legend{
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Exo', sans-serif;
+}
+
+}
