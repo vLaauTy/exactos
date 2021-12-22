@@ -83,7 +83,7 @@ main{
 
 .banner{
     grid-area: banner;
-    background-image: url(../media/3592452.jpg);
+    background-image: radial-gradient(circle at -4.32% 18.64%, #a3ffff 0, #7cffff 25%, #3cf2f2 50%, #00dbe4 75%, #00c9db 100%);
     overflow: hidden;
     background-repeat: no-repeat;
     display: flex;
@@ -104,7 +104,7 @@ main{
 }
 
 .banner2{
-    background-image: url(../media/3592452.jpg);
+    background-image: radial-gradient(circle at -4.32% 18.64%, #a3ffff 0, #7cffff 25%, #3cf2f2 50%, #00dbe4 75%, #00c9db 100%);
     grid-area: banner2;
     display: flex;
     flex-direction: row;
@@ -209,6 +209,9 @@ main{
     height: 100px;
 }
 
+.adsTexto{
+    padding: 50px;
+}
 
 /* Fin del estilo del index */
 
