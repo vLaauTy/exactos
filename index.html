@@ -18,15 +18,31 @@
 </head>
 <body>
     <header>
-        <div class="menu">
-            <div><a href="index.html" class="logo">eXactos</a></div>  
-        <nav>
-            <a href="index.html">Inicio</a>
-            <a href="./pages/contacto.html">Contacto</a>
-            <a href="./pages/faq.html">Preguntas Frecuentes</a>
-            <a href="./pages/materias.html">Materias</a>
-        </nav>
-        </div>
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container-fluid">
+              <a class="navbar-brand logo" href="#">eXactos</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              
+              <div class="collapse navbar-collapse nav-edit" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 ">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./pages/materias.html">Materias</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./pages/faq.html">Preguntas frecuentes</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./pages/contacto.html">Contacto</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
     </header>           
     <main>
         <section class="gridPadre">
@@ -52,7 +68,7 @@
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quasi omnis voluptatem natus, nobis dicta alias repudiandae at fugiat eligendi adipisci unde harum aut impedit consequatur non eius minus odit dolores?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto ullam minus deserunt at voluptatem asperiores similique maiores modi, tempora rem saepe error numquam enim quibusdam quis repudiandae deleniti dolorem expedita!</p>
             </div>
             <div class="ads">
-                <span class="wow animate__animated animate__backInLeft">No te quedes sin tu titulo</span>
+                <span class="wow animate__animated animate__backInLeft adsTexto">No te quedes sin tu titulo</span>
                 <img src="./media/guiño.png" alt="" class="wow animate__animated animate__backInRight">
             </div>
         </section>

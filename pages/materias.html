@@ -23,15 +23,31 @@
 </head>
 <body>
     <header>
-        <div class="menu">
-            <div><a href="index.html" class="logo">eXactos</a></div>  
-        <nav>
-            <a href="../index.html">Inicio</a>
-            <a href="contacto.html">Contacto</a>
-            <a href="faq.html">Preguntas Frecuentes</a>
-            <a href="materias.html">Materias</a>
-        </nav>
-        </div>
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container-fluid">
+              <a class="navbar-brand logo" href="../index.html">eXactos</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              
+              <div class="collapse navbar-collapse nav-edit" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 ">
+                  <li class="nav-item">
+                    <a class="nav-link" href="../index.html">Inicio</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Materias</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="../pages/faq.html">Preguntas frecuentes</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="../pages/contacto.html">Contacto</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
     </header>
     <main>
         <section class="contenedorMaterias">
