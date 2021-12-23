@@ -9,25 +9,18 @@ body{
 header{
  width: 100%;
  overflow: hidden;
-<<<<<<< HEAD
- background-image: radial-gradient(circle at -20.71% 50%, #e074ff 0, #b25aff 25%, #783cf2 50%, #1523de 75%, #0017cd 100%);
  margin-bottom: 20px;
-=======
  padding: 50px;
->>>>>>> header-bootstrap
 }
 
 header .logo{
     float: left;
     font-size: 50px;
     font-family: 'Exo', sans-serif;
-<<<<<<< HEAD
    color: rgb(85, 80, 80);
    line-height: 200px;
-=======
    color: rgb(255, 255, 255);
    margin-left: 20px;
->>>>>>> header-bootstrap
    text-decoration: none;
 }
 
