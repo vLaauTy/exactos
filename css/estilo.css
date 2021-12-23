@@ -320,13 +320,20 @@ main{
 /* Fin estilo de materias */
 
 /* Estilo de contacto */
-.form{
-    width: 700px;
+.contacto{
+    width: 80%;
     height: 700px;
     overflow: hidden;
     border: 3px black solid;
     margin: auto;
     border-radius: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.row{
+    display: flex;
+    justify-content: space-around;
 }
 legend{
     text-align: center;

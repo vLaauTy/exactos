@@ -39,7 +39,7 @@
                     <a class="nav-link" aria-current="page" href="../pages/materias.html">Materias</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link " aria-current="page" href="../pages/faq.html">Preguntas frecuentes</a>
+                    <a class="nav-link" aria-current="page" href="../pages/faq.html">Preguntas frecuentes</a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link active" aria-current="page" href="../pages/contacto.html">Contacto</a>
@@ -50,50 +50,38 @@
           </nav>
     </header>
     <main>
-        <section>
-            <form action="#" class="form">
-                <fieldset>
-                    <legend>Formulario de contacto</legend>
-                    <div>
-                        <label for="Nombre">Completar con tu Nombre/s</label>
-                        <input type="text" name="name" placeholder="Natalia Natalia">
-                    </div>
-                    <br>
-                    <div>
-                        <label for="Apellido">Completar con tu Apellido/s</label>
-                        <input type="text" name="apellido" placeholder="Natalia Natalia">
-                    </div>
-                    <br>
-                    <div>
-                        
-                    <label for="email">* Escribe tu email</label>
-                    <input type="email" name="email" required>
-                    </div>
-                    <br>
-                    <div>
-                        <label for="pais">Selecciona Materia</label>
-                        <select name="pais" id="">
-                            <option value="Matematica">Matematica</option>
-                            <option value="Quimica">Quimica</option>
-                            <option value="Fisica">Fisica</option>
-                            <option value="Trigonometria">Trigonometria</option>
-                        </select>
-                        <br>
-                        <div>
-                            <label for="Comentario">Consulta</label>
-                            <br>
-                            <textarea name="comentario" id="" cols="30" rows="5"></textarea>
-                            <br>
-                        </div>
-                        <div>
-                            <input type="submit" value="Enviar">
-                        
-                            <input type="reset" value="Limpiar"/>
-                            
-                        </div>
-                    </div>
-                </fieldset>
-            </form>
+      <h2 class=" d-flex justify-content-center">Contacto</h2>
+        <section class="contacto">
+          <form class="row g-3 p-5">
+            <div class="col-md-5">
+              <label for="inputEmail4" class="form-label">Email</label>
+              <input type="email" class="form-control" id="inputEmail4">
+            </div>
+            <div class="col-md-5">
+              <label for="inputPassword4" class="form-label">Numero de telefono</label>
+              <input type="tel" class="form-control" id="inputTel4">
+            </div>
+            <div class="col-md-5">
+              <label for="inputState" class="form-label">Materia</label>
+              <select id="inputState" class="form-select">
+                <option selected>Elegi la materia</option>
+                <option>Matematica</option>
+                <option>Fisica</option>
+                <option>Quimica</option>
+              </select>
+            </div>
+            <div class="col-md-5">
+              <label for="inputZip" class="form-label">Link del archivo</label>
+              <input type="text" class="form-control" id="inputZip">
+            </div>
+            <div class="form-group">
+              <label for="exampleFormControlTextarea1">Escribi tu consulta</label>
+              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            </div>
+            <div class="col-12">
+              <button type="submit" class="btn btn-primary">Enviar</button>
+            </div>
+          </form>
         </section>
     </main>
     <footer>
