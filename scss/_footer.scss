@@ -1,0 +1,26 @@
+footer{
+    background-color:rgba(6, 17, 9, 0.877);
+    width: 100%;
+    padding: 50px 0px;
+    margin: auto;
+    margin-top: 40px;
+    color: white;
+    margin: auto;
+    text-decoration: none;
+}
+
+.contactoTexto{
+    font-family: 'Montserrat', sans-serif;
+    color:white;
+    font-size: 60px;
+    text-decoration: none;
+}
+.redes{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+footer a .fab{
+    font-size: 20px;
+}

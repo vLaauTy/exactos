@@ -1,0 +1,151 @@
+.gridPadre{
+    width: 90%;
+    height: 2000px;
+    font-family: 'Exo', sans-serif;
+    color: rgb(0, 0, 0);
+    margin: auto;
+    display: grid;
+    grid-template-columns:repeat(3, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    gap: 30px;
+    grid-row-gap: 150px;
+    grid-template-areas: 
+    "banner banner banner2"
+    "banner banner banner2"
+    "info1 info2 info3"
+    "info1 info2 info3"
+    "ads ads ads"
+    ;
+}
+
+.banner{
+    grid-area: banner;
+    background-image: radial-gradient(circle at -4.32% 18.64%, #a3ffff 0, #7cffff 25%, #3cf2f2 50%, #00dbe4 75%, #00c9db 100%);
+    overflow: hidden;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-radius: 40px;
+    flex-wrap: wrap;
+}
+
+.banner:hover{
+    transition: all 3s;
+    transform: scale(1.01,1.01);
+}
+
+.banner h1{
+    text-align: center;
+}
+
+.banner2{
+    background-image: radial-gradient(circle at -4.32% 18.64%, #a3ffff 0, #7cffff 25%, #3cf2f2 50%, #00dbe4 75%, #00c9db 100%);
+    grid-area: banner2;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-radius: 40px;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.info1{
+    background-image: linear-gradient(170deg, #00ffff 0, #00f7ff 25%, #3cb5f2 50%, #3e789f 75%, #304558 100%);
+    grid-area: info1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    border-radius: 40px;
+    color: white;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.info1:hover{
+    border-radius: 20px solid black;
+}
+
+.info2{
+    background-image: linear-gradient(170deg, #00ffff 0, #00f7ff 25%, #3cb5f2 50%, #3e789f 75%, #304558 100%);
+    grid-area: info2;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    border-radius: 40px;
+    color: white;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.info3{
+    background-image: linear-gradient(170deg, #00ffff 0, #00f7ff 25%, #3cb5f2 50%, #3e789f 75%, #304558 100%);
+    grid-area: info3;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    border-radius: 40px;
+    color: white;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.ads{
+    grid-area: ads;
+    font-family: 'Titan One', cursive;
+    font-size: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: rgb(0, 0, 0);
+}
+
+.titulo{
+    font-family: 'Montserrat', sans-serif;  color: white;
+    font-size: 90px;
+    transition: all 3s ease;
+}
+
+.titulo:hover{
+    transform: scale(1.09,1.09);
+}
+.subtitulo{
+    font-family: 'Montserrat', sans-serif;
+    color:white;
+    font-size: 60px;
+    transition: all 3s ease;
+}
+
+.subtitulo:hover{
+    transform: scale(1.1,1.1);
+}
+
+.info1 img{
+    width: 100px;
+    height: 100px;
+}
+
+.info2 img{
+    width: 100px;
+    height: 100px;
+}
+
+.info3 img{
+    width: 100px;
+    height: 100px;
+}
+
+.ads img{
+    width: 100px;
+    height: 100px;
+}
+
+.adsTexto{
+    padding: 50px;
+}

@@ -1,0 +1,94 @@
+.contenedorMaterias{
+    width: 100%;
+    height: 2700px;
+    font-family: 'Exo', sans-serif;
+    color: rgb(0, 0, 0);
+    display: grid;
+    grid-template-columns:repeat(3, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-row-gap: 100px;
+    grid-template-areas: 
+    "pres pres pres"
+    "texto texto foto"
+    "foto2 texto2 texto2"
+    "texto3 texto3 foto3"
+    "end end end"
+    ;
+}
+
+.pres{
+    grid-area: pres;
+    font-family: 'Titan One', cursive;
+    font-size: 70px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+    padding:  300px;
+}
+.texto{
+    grid-area: texto;
+    font-family: 'Titan One', cursive;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+}
+.foto{
+     background-image: url(../media/mathsp.png);
+     grid-area: foto;
+     background-repeat: no-repeat;
+ }
+
+ .texto2{
+    grid-area: texto2;
+    font-family: 'Titan One', cursive;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+}
+.foto2{
+     background-image: url(../media/quimicap.png);
+     grid-area: foto2;
+     background-repeat: no-repeat;
+     width: 268px;
+     height: 300px;
+     margin-left: 30px;
+ }
+
+ .texto3{
+    grid-area: texto3;
+    font-family: 'Titan One', cursive;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+}
+.texto3:hover{
+    transition: all 2s;
+    transform: scale(1.01,1.01);
+}
+.foto3{
+     background-image: url(../media/fisica2.png);
+     grid-area: foto3;
+     background-repeat: no-repeat;
+     width: 268px;
+     height: 300px;
+     margin-left: 30px;
+ }
+
+ .end{
+     grid-area: end;
+     font-family: 'Titan One', cursive;
+     font-size: 50px;
+     display: flex;
+     flex-direction: row;
+     justify-content: center;
+     align-items: center;
+     margin-bottom: 30px;
+ }

@@ -1,0 +1,20 @@
+.contacto{
+    width: 80%;
+    height: 700px;
+    overflow: hidden;
+    border: 3px black solid;
+    margin: auto;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.row{
+    display: flex;
+    justify-content: space-around;
+}
+legend{
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Exo', sans-serif;
+}
