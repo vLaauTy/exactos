@@ -6,7 +6,7 @@
 .gridPadre {
   width: 90%;
   height: 2000px;
-  font-family: 'Exo', sans-serif;
+  font-family: "Exo", sans-serif;
   color: black;
   margin: auto;
   display: grid;
@@ -14,10 +14,9 @@
   grid-template-rows: repeat(5, 1fr);
   gap: 30px;
   grid-row-gap: 150px;
-  grid-template-areas: "banner banner banner2" "banner banner banner2" "info1 info2 info3" "info1 info2 info3" "ads ads ads"; }
+  grid-template-areas: "banner1 banner1 banner2" "banner1 banner1 banner2" "info1 info2 info3" "info1 info2 info3" "ads ads ads"; }
 
-.banner {
-  grid-area: banner;
+.banner, .banner1, .banner2 {
   background-image: radial-gradient(circle at -4.32% 18.64%, #a3ffff 0, #7cffff 25%, #3cf2f2 50%, #00dbe4 75%, #00c9db 100%);
   overflow: hidden;
   background-repeat: no-repeat;
@@ -26,27 +25,19 @@
   justify-content: center;
   align-items: center;
   border-radius: 40px;
-  flex-wrap: wrap; }
-
-.banner:hover {
-  transition: all 3s;
-  transform: scale(1.01, 1.01); }
-
-.banner h1 {
-  text-align: center; }
-
-.banner2 {
-  background-image: radial-gradient(circle at -4.32% 18.64%, #a3ffff 0, #7cffff 25%, #3cf2f2 50%, #00dbe4 75%, #00c9db 100%);
-  grid-area: banner2;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  border-radius: 40px;
   flex-wrap: wrap;
   text-align: center; }
+  .banner:hover, .banner1:hover, .banner2:hover {
+    transition: all 3s;
+    transform: scale(1.01, 1.01); }
 
-.info, .info .info1, .info .info2, .info .info3 {
+.banner1 {
+  grid-area: banner1; }
+
+.banner2 {
+  grid-area: banner2; }
+
+.info, .info1, .info2, .info3 {
   width: 500px;
   background-image: linear-gradient(170deg, #00ffff 0, #00f7ff 25%, #3cb5f2 50%, #3e789f 75%, #304558 100%);
   display: flex;
@@ -57,39 +48,42 @@
   flex-wrap: wrap;
   text-align: center;
   position: relative; }
-  .info:before, .info .info1:before, .info .info2:before, .info .info3:before, .info:after, .info .info1:after, .info .info2:after, .info .info3:after {
+  .info:before, .info1:before, .info2:before, .info3:before, .info:after, .info1:after, .info2:after, .info3:after {
     content: "";
     display: block;
     position: absolute;
     left: 0;
     background: white;
     transition: all .3s; }
-  .info:before, .info .info1:before, .info .info2:before, .info .info3:before {
+  .info:before, .info1:before, .info2:before, .info3:before {
     bottom: 0;
     width: 0;
     height: 3px;
     box-shadow: 500px -707px white; }
-  .info:after, .info .info1:after, .info .info2:after, .info .info3:after {
+  .info:after, .info1:after, .info2:after, .info3:after {
     top: 0;
     width: 3px;
     height: 0;
     box-shadow: 497px 710px white; }
-  .info:hover:after, .info .info1:hover:after, .info .info2:hover:after, .info .info3:hover:after {
+  .info:hover:after, .info1:hover:after, .info2:hover:after, .info3:hover:after {
     height: 100%;
     box-shadow: 497px 0 white; }
-  .info:hover:before, .info .info1:hover:before, .info .info2:hover:before, .info .info3:hover:before {
+  .info:hover:before, .info1:hover:before, .info2:hover:before, .info3:hover:before {
     width: 100%;
     box-shadow: 0 -707px white; }
-  .info .info1 {
-    grid-area: info1; }
-  .info .info2 {
-    grid-area: info2; }
-  .info .info3 {
-    grid-area: info3; }
+
+.info1 {
+  grid-area: info1; }
+
+.info2 {
+  grid-area: info2; }
+
+.info3 {
+  grid-area: info3; }
 
 .ads {
   grid-area: ads;
-  font-family: 'Titan One', cursive;
+  font-family: "Titan One", cursive;
   font-size: 50px;
   display: flex;
   flex-direction: row;
@@ -98,7 +92,7 @@
   color: black; }
 
 .titulo {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   color: white;
   font-size: 90px;
   transition: all 3s ease; }
@@ -107,7 +101,7 @@
   transform: scale(1.09, 1.09); }
 
 .subtitulo {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   color: white;
   font-size: 60px;
   transition: all 3s ease; }
@@ -115,24 +109,9 @@
 .subtitulo:hover {
   transform: scale(1.1, 1.1); }
 
-.info1 img {
-  width: 100px;
-  height: 100px; }
-
-.info2 img {
-  width: 100px;
-  height: 100px; }
-
-.info3 img {
-  width: 100px;
-  height: 100px; }
-
-.ads img {
-  width: 100px;
-  height: 100px; }
-
 .adsTexto {
-  padding: 50px; }
+  padding: 50px;
+  margin-left: 50px; }
 
 .carousel-inner img {
   width: 100%;
