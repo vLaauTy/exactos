@@ -1,43 +1,37 @@
-.caja{
-    width: 90%;
-    height: auto;
-    margin: auto;
-    overflow: hidden;
-    border: 1px black solid;
-    border-radius: 15px;
-    display: flex;
-   flex-direction: row;
-   flex-wrap: wrap;
-   align-content: flex-start;
-}
-.p1{
-    width: 50%;
-    height: 300px;
-    background-color: tomato;
+$bgfaq1:radial-gradient(circle at 120.71% 50%, #89ffff 0, #6effff 12.5%, #55ffff 25%, #43ffff 37.5%, #3cf2f2 50%, #3dd6de 62.5%, #40becc 75%, #44a9bb 87.5%, #4798ac 100%);
+$bgfaq2:radial-gradient(circle at -17.35% 44.11%, #8cffff 0, #6fffff 12.5%, #56ffff 25%, #44ffff 37.5%, #3cf2f2 50%, #3dd5de 62.5%, #40bdcb 75%, #44a8ba 87.5%, #4796ab 100%);
+
+@mixin estiloCaja ($bgfaq) {
+    background-image: $bgfaq;
+    color:black;
+    display: inline-block;
+    padding: 10px;
+    margin: 30px;
+    width: 40%;
     text-align: center;
+    height: 500px;
 }
-.p2{
-    width: 50%;
-    height: 300px;
-    background-color: rgb(208, 240, 92);
+
+.caja-1{
+    @include estiloCaja($bgfaq1)
 }
-.p3{
-    width: 50%;
-    height: 300px;
-    background-color: chocolate;
+
+.caja-2{
+    @include estiloCaja($bgfaq2)
 }
-.p4{
-    width: 50%;
-    height: 300px;
-    background-color: rgb(184, 197, 134);
+
+.caja-3{
+    @include estiloCaja($bgfaq1)
 }
-.p5{
-    width: 50%;
-    height: 300px;
-    background-color: rgb(113, 253, 230);
+
+.caja-4{
+    @include estiloCaja($bgfaq2)
 }
-.p6{
-    width: 50%;
-    height: 300px;
-    background-color: rgb(190, 120, 69);
+
+.caja{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
 }

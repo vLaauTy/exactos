@@ -18,7 +18,7 @@
     ;
 }
 
-.banner{
+.banner {
     grid-area: banner;
     background-image: radial-gradient(circle at -4.32% 18.64%, #a3ffff 0, #7cffff 25%, #3cf2f2 50%, #00dbe4 75%, #00c9db 100%);
     overflow: hidden;
@@ -28,19 +28,16 @@
     justify-content: center;
     align-items: center;
     border-radius: 40px;
-    flex-wrap: wrap;
-}
-
-.banner:hover{
+    flex-wrap: wrap; }
+  
+  .banner:hover {
     transition: all 3s;
-    transform: scale(1.01,1.01);
-}
-
-.banner h1{
-    text-align: center;
-}
-
-.banner2{
+    transform: scale(1.01, 1.01); }
+  
+  .banner h1 {
+    text-align: center; }
+  
+  .banner2 {
     background-image: radial-gradient(circle at -4.32% 18.64%, #a3ffff 0, #7cffff 25%, #3cf2f2 50%, #00dbe4 75%, #00c9db 100%);
     grid-area: banner2;
     display: flex;
@@ -49,51 +46,79 @@
     align-items: center;
     border-radius: 40px;
     flex-wrap: wrap;
-    text-align: center;
-}
+    text-align: center; }
 
-.info1{
-    background-image: linear-gradient(170deg, #00ffff 0, #00f7ff 25%, #3cb5f2 50%, #3e789f 75%, #304558 100%);
-    grid-area: info1;
+
+.info{
+    $borde-color:rgb(255, 255, 255);
+    @function restov (){
+        @return -(710px - $borde-widht)
+    }
+    @function restoh (){
+        @return (500px - $borde-widht)
+    }
+    $borde-widht:3px;
+    width: $widhtinfo;
+    background-image: $bginfo;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    border-radius: 40px;
     color: white;
     flex-wrap: wrap;
     text-align: center;
+
+    position: relative;
+    &:before, 
+    &:after {
+        content: "";
+        display: block;
+        position: absolute;
+        left: 0;
+        background: $borde-color;
+        transition: all .3s;
+        
+
+    }
+    &:before{
+        bottom: 0;
+        width: 0;
+        height: $borde-widht;
+        box-shadow: 500px restov() $borde-color;
+    }
+    &:after {
+        top: 0;
+        width: $borde-widht;
+        height: 0;
+        box-shadow: restoh() 710px $borde-color;
+
+    }
+    &:hover{
+        &:after{
+            height: 100%;
+            box-shadow: restoh() 0 $borde-color;
+        }
+        &:before{
+            width: 100%;
+            box-shadow: 0 restov() $borde-color;
+        }
+    }
+    .info1{
+        @extend .info;
+        grid-area: info1;
+    }
+
+    .info2{
+        @extend .info;
+        grid-area: info2;
+    }
+
+    .info3{
+        @extend .info;
+        grid-area: info3;
+    }
 }
 
-.info1:hover{
-    border-radius: 20px solid black;
-}
-
-.info2{
-    background-image: linear-gradient(170deg, #00ffff 0, #00f7ff 25%, #3cb5f2 50%, #3e789f 75%, #304558 100%);
-    grid-area: info2;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-    border-radius: 40px;
-    color: white;
-    flex-wrap: wrap;
-    text-align: center;
-}
-
-.info3{
-    background-image: linear-gradient(170deg, #00ffff 0, #00f7ff 25%, #3cb5f2 50%, #3e789f 75%, #304558 100%);
-    grid-area: info3;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-    border-radius: 40px;
-    color: white;
-    flex-wrap: wrap;
-    text-align: center;
-}
 
 .ads{
     grid-area: ads;
@@ -148,4 +173,21 @@
 
 .adsTexto{
     padding: 50px;
+}
+
+.carousel-inner img {
+    width: 100%;
+    height: 100%;
+  }
+  .profesores {
+      font-family: $fuente1;
+      font-size: 50px;
+      margin: auto;
+      text-align: center;
+      padding: 10px;
+      margin: 100px;
+  }
+p{
+    font:$font-p;
+    padding: 20px;
 }
