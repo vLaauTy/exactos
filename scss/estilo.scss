@@ -53,6 +53,10 @@ main{
 
 /*medias querrys*/
 @media only screen and (max-width: 768px){
+    p{
+        font: $font-p-m;
+        padding: 5px;
+    }
     
     .gridPadre{
        width: 100%;
@@ -60,18 +64,20 @@ main{
        font-family: 'Exo', sans-serif;
        color: rgb(0, 0, 0);
        display: grid;
-       grid-template-columns:repeat(3, 1fr);
+       grid-template-columns:repeat(1, 1fr);
        grid-template-rows: repeat(7, 1fr);
        gap: 40px;
        grid-template-areas: 
-       "banner banner banner"
-       "banner banner banner"
-       "banner2 banner2 banner2"
-       "info1 info1 info1"
-       "info2 info2 info2"
-       "info3 info3 info3"
-       "ads ads ads"
+       "banner1 "
+       "banner1 "
+       "banner2 "
+       "info1 "
+       "info2 "
+       "info3 "
+       "ads "
     }
+    
+
     .titulo{
        font-family: 'Montserrat', sans-serif;  color: rgb(0, 0, 0);
        font-size: 30px;
@@ -81,63 +87,43 @@ main{
        color: rgb(0, 0, 0);
        font-size: 20px;
    }
-   .info1 img{
-       width: 40%;
-       height: 40%;
-   }
-   
-   .info2 img{
-       width: 40%;
-       height: 40%;
-   }
-   
-   .info3 img{
-       width: 40%;
-       height: 40%;
-   }
-   .caja{
-    width: 90%;
-    height: auto;
-    margin: auto;
-    overflow: hidden;
-    border: 1px black solid;
-    border-radius: 15px;
-    display: flex;
-   flex-direction: column;
-   flex-wrap: wrap;
-   align-content: flex-start;
-}
-.p1{
-    width: 100%;
-    height: 300px;
-    background-color: tomato;
+
+    
+   @mixin estiloCaja ($bgfaq) {
+    background-image: $bgfaq;
+    color:black;
+    display: inline-block;
+    padding: 5px;
+    margin: 15px;
+    width: 20%;
     text-align: center;
+    height: 250px;
 }
-.p2{
-    width: 100%;
-    height: 300px;
-    background-color: rgb(208, 240, 92);
+
+.caja-1{
+    @include estiloCaja($bgfaq1)
 }
-.p3{
-    width: 100%;
-    height: 300px;
-    background-color: chocolate;
+
+.caja-2{
+    @include estiloCaja($bgfaq2)
 }
-.p4{
-    width: 100%;
-    height: 300px;
-    background-color: rgb(184, 197, 134);
+
+.caja-3{
+    @include estiloCaja($bgfaq1)
 }
-.p5{
-    width: 100%;
-    height: 300px;
-    background-color: rgb(113, 253, 230);
+
+.caja-4{
+    @include estiloCaja($bgfaq2)
 }
-.p6{
-    width: 100%;
-    height: 300px;
-    background-color: rgb(190, 120, 69);
+
+.caja{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
 }
+
 .form{
     width: 500px;
     height: 700px;
