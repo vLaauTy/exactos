@@ -1,59 +1,83 @@
-.gridPadre{
-    width: 90%;
-    height: 2000px;
+.padre{
+    width: 95%;
+    height: 700px;
     font-family: $fuente3;
-    color: rgb(0, 0, 0);
-    margin: auto;
-    display: grid;
-    grid-template-columns:repeat(3, 1fr);
-    grid-template-rows: repeat(5, 1fr);
-    gap: 30px;
-    grid-row-gap: 150px;
-    grid-template-areas: 
-    "banner1 banner1 banner2"
-    "banner1 banner1 banner2"
-    "info1 info2 info3"
-    "info1 info2 info3"
-    "ads ads ads"
-    ;
+    color: rgb(214, 0, 0);
+    margin: 1em auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+
 }
 
 .banner{
     background-image: $bgbanner;
     overflow: hidden;
+    height: 95%;
+    margin: 1.2em;
     background-repeat: no-repeat;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    border-radius: 40px;
     flex-wrap: wrap; 
     text-align: center;
+    img{
+        background-size: cover;
+        opacity: 0;
+        position: absolute;
+        transition: all 3s ease;
+        z-index: 0;
+        &:hover{
+            opacity: 0.6;
+            transition: all 3s ease;
+        }
+    }
+    .titulo, .subtitulo{
+        position: absolute;
+        z-index: 1;
+        transition: all 3s ease;
+    }
+
     &:hover {
-        transition: all 3s;
-        transform: scale(1.01, 1.01); }
+            .titulo, .subtitulo{
+                color: black;
+        transition: all 3s ease;
+            }
+        }
 }
 
 .banner1{
     @extend .banner;
-    grid-area: banner1;
+    width: 60%;
+
 }
 
 .banner2{
     @extend .banner;
-    grid-area: banner2;
+    width: 40%;
 } 
+
+.cards{
+    width: 95%;
+    height: $heightinfo;
+    display: flex;
+    margin: 1em auto;
+    justify-content: center;
+}
 
     .info {
         $borde-color: rgb(255, 255, 255);
         @function restov () {
-            @return -(710px - $borde-widht)
+            @return -($heightinfo - $borde-widht)
         }
         @function restoh () {
-            @return (500px - $borde-widht)
+            @return ($widhtinfo - $borde-widht)
         }
         $borde-widht:3px;
         width: $widhtinfo;
+        height: $heightinfo;
+        margin: 2em;
         background-image: $bginfo;
         display: flex;
         flex-direction: column;
@@ -76,13 +100,13 @@
             bottom: 0;
             width: 0;
             height: $borde-widht;
-            box-shadow: 500px restov() $borde-color;
+            box-shadow: $widhtinfo restov() $borde-color;
         }
         &:after {
             top: 0;
             width: $borde-widht;
             height: 0;
-            box-shadow: restoh() 710px $borde-color;
+            box-shadow: restoh() $heightinfo $borde-color;
         }
         &:hover {
             &:after {
@@ -98,21 +122,17 @@
     
     .info1 {
         @extend .info;
-        grid-area: info1;
     }
     
     .info2 {
         @extend .info;
-        grid-area: info2;
     }
     
     .info3 {
         @extend .info;
-        grid-area: info3;
     }
     
     .ads {
-        grid-area: ads;
         font-family: $fuente2;
         font-size: 50px;
         display: flex;
@@ -120,31 +140,32 @@
         justify-content: center;
         align-items: center;
         color: rgb(0, 0, 0);
+        margin:7em auto
     }
 
 .titulo{
     font-family: $fuente1;  color: white;
-    font-size: 90px;
+    font-size: 80px;
     transition: all 3s ease;
 }
 
 .titulo:hover{
-    transform: scale(1.09,1.09);
+    transform:  scale(1.09, 1.09);
 }
 .subtitulo{
     font-family: 'Montserrat', sans-serif;
     color:white;
-    font-size: 60px;
+    font-size: 50px;
     transition: all 3s ease;
 }
 
 .subtitulo:hover{
-    transform: scale(1.1,1.1);
+    transform: scale(1.05,1.05);
 }
 
 .adsTexto{
     padding: 50px;
-    margin-left: 50px;
+    margin-right: 100px;
 }
 
 .carousel-inner img {
@@ -163,3 +184,4 @@ p{
     font:$font-p;
     padding: 20px;
 }
+

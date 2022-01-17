@@ -10,9 +10,223 @@
 @import "footer";
 @import "contacto";
 @import "faq";
-@import "mediaquerrys";
 @import "general";
 
 
+@media only screen and (max-width: 768px){
+    p{
+        font: $font-p-m;
+        padding: 5px;
+    }
+    
+
+    .padre{
+        width: 95%;
+        height: 700px;
+        font-family: $fuente3;
+        color: rgb(214, 0, 0);
+        margin: 1em auto;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+    
+    .banner, .banner1, .banner2{
+        background-image: $bgbanner;
+        width: 100%;
+        height: 95%;
+        margin: 1.2em auto;
+        background-repeat: no-repeat;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap; 
+        text-align: center;
+    }
+
+    .cards{
+        width: 95%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        margin: 1em auto;
+        justify-content: center;
+        align-items: center;
+        p{
+            font-size: 20px;
+        }
+    }
+    
+        .info1, .info2, .info3 {
+            $borde-color: rgb(255, 255, 255);
+            width: 100%;
+            height: 400px;
+            background-image: $bginfo;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+            color: white;
+            flex-wrap: wrap;
+            text-align: center;
+        }
+
+
+
+
+    
+   @mixin estiloCaja ($bgfaq) {
+    background-image: $bgfaq;
+    color:black;
+    display: inline-block;
+    padding: 5px;
+    margin: 15px;
+    width: 20%;
+    text-align: center;
+    height: 250px;
+}
+
+.caja-1{
+    @include estiloCaja($bgfaq1)
+}
+
+.caja-2{
+    @include estiloCaja($bgfaq2)
+}
+
+.caja-3{
+    @include estiloCaja($bgfaq1)
+}
+
+.caja-4{
+    @include estiloCaja($bgfaq2)
+}
+
+.caja{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+
+.form{
+    width: 500px;
+    height: 700px;
+    overflow: hidden;
+    border: 3px black solid;
+    margin: auto;
+    border-radius: 20px;
+}
+legend{
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Exo', sans-serif;
+}
+
+.contenedorMaterias{
+    width: 100%;
+    height: 2500px;
+    font-family: 'Exo', sans-serif;
+    color: rgb(0, 0, 0);
+    display: grid;
+    grid-template-columns:repeat(3, 1fr);
+    grid-template-rows: repeat(7, 1fr);
+    grid-row-gap: 100px;
+    grid-template-areas: 
+    "pres pres pres"
+    "foto foto foto"
+    "texto texto texto"
+    "foto2 foto2 foto2"
+    "texto2 texto2 texto2"
+    "foto3 foto3 foto3"
+    "texto3 texto3 texto3"
+    ;
+   .subtitulo{
+       font-size: 15px;
+   }
+   .titulo{
+       font-size: 20px;
+   }
+}
+
+.foto{
+    background-image: url(../media/mathscelu.png);
+    grid-area: foto;
+    background-repeat: no-repeat;
+    height: 200px;
+    width: 200px;
+    margin: auto;
+}
+
+.foto2{
+    background-image: url(../media/quimicacelu.png);
+    grid-area: foto2;
+    background-repeat: no-repeat;
+    width: 200px;
+    height: 200px;
+    margin: auto;
+}
+.foto3{
+    background-image: url(../media/fisicacelu.png);
+    grid-area: foto3;
+    background-repeat: no-repeat;
+    width: 200px;
+    height: 200px;
+    margin:auto;
+}
+
+
+@mixin estiloCaja ($bgfaq) {
+    background-image: $bgfaq;
+    color:black;
+    display: inline-block;
+    padding: 10px;
+    margin: 30px auto;
+    width: 100%;
+    text-align: center;
+    height: 400px;
+    p {
+        font-size: 20px;
+    }
+}
+
+.caja-1{
+    @include estiloCaja($bgfaq1)
+}
+
+.caja-2{
+    @include estiloCaja($bgfaq2)
+}
+
+.caja-3{
+    @include estiloCaja($bgfaq1)
+}
+
+.caja-4{
+    @include estiloCaja($bgfaq2)
+}
+
+.caja{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+
+.carousel{
+    p{
+        font-size: 20px;
+    }
+}
+
+footer .titulo{
+    font-size: 25px;
+}
+
+}
 
 

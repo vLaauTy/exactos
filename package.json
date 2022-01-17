@@ -1,7 +1,7 @@
 {
-  "name": "coderhouse",
+  "name": "eXactos",
   "version": "1.0.0",
-  "description": "",
+  "description": "Pagina dedicada a la educacion particular en ciencias exactas",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -9,7 +9,7 @@
     "watch-css": "nodemon -e scss -x \"npm run build-css\""
     
   },
-  "author": "",
+  "author": "Lautaro Atencio",
   "license": "ISC",
   "devDependencies": {
     "node-sass": "^7.0.1",
