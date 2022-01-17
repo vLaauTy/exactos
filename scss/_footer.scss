@@ -22,6 +22,23 @@ footer{
     justify-content: center;
     align-items: center;
 }
-footer a .fab{
-    font-size: 20px;
+footer{
+    a {
+        .fab{
+            font-size: 20px;
+        }
+
+    }
+
+}
+
+.botones{
+    width: 300px;
+}
+
+footer{
+    svg{
+        justify-content: center;
+        align-items: center;
+    }
 }
