@@ -107,18 +107,16 @@
   color: white;
   font-size: 80px;
   transition: all 3s ease; }
-
-.titulo:hover {
-  transform: scale(1.09, 1.09); }
+  .titulo:hover {
+    transform: scale(1.09, 1.09); }
 
 .subtitulo {
   font-family: 'Montserrat', sans-serif;
   color: white;
   font-size: 50px;
   transition: all 3s ease; }
-
-.subtitulo:hover {
-  transform: scale(1.05, 1.05); }
+  .subtitulo:hover {
+    transform: scale(1.05, 1.05); }
 
 .adsTexto {
   padding: 50px;
@@ -201,10 +199,9 @@ p {
   justify-content: flex-start;
   align-items: center;
   text-align: center; }
-
-.texto3:hover {
-  transition: all 2s;
-  transform: scale(1.01, 1.01); }
+  .texto3:hover {
+    transition: all 2s;
+    transform: scale(1.01, 1.01); }
 
 .foto3 {
   background-image: url(../media/fisica2.png);
@@ -229,16 +226,15 @@ header {
   overflow: hidden;
   margin-bottom: 20px;
   padding: 50px; }
-
-header .logo {
-  float: left;
-  font-size: 50px;
-  font-family: 'Exo', sans-serif;
-  color: #555050;
-  line-height: 200px;
-  color: white;
-  margin-left: 20px;
-  text-decoration: none; }
+  header .logo {
+    float: left;
+    font-size: 50px;
+    font-family: 'Exo', sans-serif;
+    color: #555050;
+    line-height: 200px;
+    color: white;
+    margin-left: 20px;
+    text-decoration: none; }
 
 .nav-edit {
   margin-right: 13%;

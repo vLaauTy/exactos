@@ -147,20 +147,20 @@
     font-family: $fuente1;  color: white;
     font-size: 80px;
     transition: all 3s ease;
+    &:hover{
+        transform:  scale(1.09, 1.09);
+    }
 }
 
-.titulo:hover{
-    transform:  scale(1.09, 1.09);
-}
+
 .subtitulo{
     font-family: 'Montserrat', sans-serif;
     color:white;
     font-size: 50px;
     transition: all 3s ease;
-}
-
-.subtitulo:hover{
-    transform: scale(1.05,1.05);
+    &:hover{
+        transform: scale(1.05,1.05);
+    }
 }
 
 .adsTexto{
@@ -168,10 +168,13 @@
     margin-right: 100px;
 }
 
-.carousel-inner img {
-    width: 100%;
-    height: 100%;
-  }
+.carousel-inner {
+    img{
+        width: 100%;
+        height: 100%;
+    }
+}
+
   .profesores {
       font-family: $fuente1;
       font-size: 50px;

@@ -68,11 +68,12 @@
     justify-content: flex-start;
     align-items: center;
     text-align: center;
-}
-.texto3:hover{
-    transition: all 2s;
+    &:hover{
+        transition: all 2s;
     transform: scale(1.01,1.01);
+    }
 }
+
 .foto3{
      background-image: url(../media/fisica2.png);
      grid-area: foto3;
