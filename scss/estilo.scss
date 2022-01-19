@@ -53,11 +53,14 @@
         margin: 1em auto;
         justify-content: center;
         align-items: center;
+        border:none;
         p{
             font-size: 20px;
         }
     }
     
+
+
         .info1, .info2, .info3 {
             $borde-color: rgb(255, 255, 255);
             width: 100%;
@@ -70,7 +73,18 @@
             color: white;
             flex-wrap: wrap;
             text-align: center;
+            &:hover {
+                &:after {
+                    height: 0;
+                    box-shadow: restoh() 0 $borde-color;
+                }
+                &:before {
+                    width: 0;
+                    box-shadow: 0 restov() $borde-color;
+                }
+            }
         }
+
 
 
 

@@ -387,7 +387,8 @@ main {
     flex-direction: column;
     margin: 1em auto;
     justify-content: center;
-    align-items: center; }
+    align-items: center;
+    border: none; }
     .cards p {
       font-size: 20px; }
   .info1, .info2, .info3 {
@@ -401,6 +402,12 @@ main {
     color: white;
     flex-wrap: wrap;
     text-align: center; }
+    .info1:hover:after, .info2:hover:after, .info3:hover:after {
+      height: 0;
+      box-shadow: restoh() 0 white; }
+    .info1:hover:before, .info2:hover:before, .info3:hover:before {
+      width: 0;
+      box-shadow: 0 restov() white; }
   .caja-1 {
     background-image: radial-gradient(circle at 120.71% 50%, #89ffff 0, #6effff 12.5%, #55ffff 25%, #43ffff 37.5%, #3cf2f2 50%, #3dd6de 62.5%, #40becc 75%, #44a9bb 87.5%, #4798ac 100%);
     color: black;
