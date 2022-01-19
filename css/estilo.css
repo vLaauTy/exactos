@@ -172,7 +172,10 @@ p {
 .foto {
   background-image: url(../media/mathsp.png);
   grid-area: foto;
-  background-repeat: no-repeat; }
+  background-repeat: no-repeat;
+  width: 268px;
+  height: 300px;
+  margin-left: 30px; }
 
 .texto2 {
   grid-area: texto2;
