@@ -32,7 +32,7 @@
     transition: all 3s ease;
     z-index: 0; }
     .banner img:hover, .banner1 img:hover, .banner2 img:hover {
-      opacity: 0.6;
+      opacity: 0.4;
       transition: all 3s ease; }
   .banner .titulo, .banner1 .titulo, .banner2 .titulo, .banner .subtitulo, .banner1 .subtitulo, .banner2 .subtitulo {
     position: absolute;
