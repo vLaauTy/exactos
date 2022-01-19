@@ -268,7 +268,9 @@ footer a .fab {
   font-size: 20px; }
 
 .botones {
-  width: 300px; }
+  width: 300px;
+  padding: 0.5rem;
+  margin: 1.5rem; }
 
 footer svg {
   justify-content: center;
@@ -553,3 +555,28 @@ main {
     font-size: 25px; }
   .botones {
     width: 100px; } }
+
+@media only screen and (max-width: 360px) {
+  .titulo, .subtitulo, .profesores, .adsTexto {
+    font-size: 20px; }
+  p {
+    font-size: 10px; }
+  .adsTexto {
+    margin: 0; }
+  .ads img {
+    width: 50px;
+    height: 50px; }
+  .carousel-caption p {
+    font-size: 8px;
+    margin: 0; }
+  .carousel-caption h3, .carousel-caption .pres {
+    font-size: 13px; }
+  .botones {
+    padding: 5px;
+    margin: 5px;
+    width: 100px; }
+  .pres {
+    font-size: 35px;
+    padding: 0;
+    margin: 0;
+    text-align: center; } }

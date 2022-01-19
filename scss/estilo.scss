@@ -247,3 +247,49 @@ footer .titulo{
 }
 
 
+@media only screen and (max-width: 360px){
+
+    .titulo, .subtitulo, .profesores, .adsTexto  {
+        font-size: 20px;
+    }
+
+    p {
+        font-size: 10px;
+    }
+    .adsTexto{
+        margin:0;
+    }
+    .ads{
+        img{
+            width: 50px;
+            height: 50px;
+        }
+    }
+
+    .carousel-caption{
+        p{
+            font-size: 8px;
+            margin: 0;
+        }
+        h3, .pres{
+            font-size: 13px;
+        }
+    }
+
+    .botones{
+        padding:5px;
+        margin: 5px;
+        width: 100px;
+    }
+
+
+.pres{
+    font-size: 35px;
+    padding: 0;
+    margin:0;
+    text-align: center;
+}
+
+}
+
+    
