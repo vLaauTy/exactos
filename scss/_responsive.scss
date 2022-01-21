@@ -1,40 +1,60 @@
-@media only screen and (max-width: 360px){
-
-    .titulo, .subtitulo, .profesores, .adsTexto  {
-        font-size: 20px;
-    }
-
-    p {
-        font-size: 10px;
-    }
-    .adsTexto{
-        margin:0;
-    }
-    .ads{
-        img{
-            width: 50px;
-            height: 50px;
+@media only screen and (max-width: 1800px){
+    .info {
+        $borde-color: rgb(255, 255, 255);
+        @function restov () {
+            @return -($heightinfo - $borde-widht)
         }
-    }
-
-    .carousel-caption{
-        p{
-            font-size: 8px;
-            margin: 0;
+        @function restoh () {
+            @return ($widhtinfo - $borde-widht)
         }
-        h3, .pres{
-            font-size: 13px;
+        $borde-widht:3px;
+        width: $widhtinfo;
+        height: $heightinfo;
+        margin: 2em;
+        background-image: $bginfo;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        color: white;
+        flex-wrap: wrap;
+        text-align: center;
+        position: relative;
+        &:before,
+        &:after {
+            content: "";
+            display: block;
+            position: absolute;
+            left: 0;
+            background: $borde-color;
+            transition: all .3s;
         }
-    }
+        &:before {
+            bottom: 0;
+            width: 0;
+            height: $borde-widht;
+            box-shadow: $widhtinfo restov() $borde-color;
+        }
+        &:after {
+            top: 0;
+            width: $borde-widht;
+            height: 0;
+            box-shadow: restoh() $heightinfo $borde-color;
+        }
+        &:hover {
+            &:after {
+                height: 0;
+                box-shadow: restoh() 0 $borde-color;
+            }
+            &:before {
+                width: 0;
+                box-shadow: 0 restov() $borde-color;
+            }
+        }
 
-.pres{
-    font-size: 35px;
-    padding: 0;
-    margin:0;
-    text-align: center;
+    }
 }
 
-}
 
 @media only screen and (max-width: 1204px){
     p{
@@ -45,12 +65,10 @@
         font-size: 30px;
     }
 
-.d-inline-flex{
-    justify-content: space-between;
-}
+
 
 .botones{
-    width: 200px;
+    width: 250px;
 }
 
 }
@@ -285,14 +303,14 @@ footer .titulo{
 }
 
 .botones{
-    width: 150px;
+    width: 100px;
 }
 
 }
 
-@media only screen and (max-width: 560px){
+@media only screen and (max-width: 360px){
 
-    .titulo, .subtitulo,  .adsTexto  {
+    .titulo, .subtitulo, .profesores, .adsTexto  {
         font-size: 20px;
     }
 
@@ -320,21 +338,16 @@ footer .titulo{
     }
 
 .pres{
-    font-size: 35px;
+    font-size: 30px;
     padding: 0;
     margin:0;
     text-align: center;
 }
 
 .botones{
+    margin: 10px;
+    padding: 10px;
     width: 100px;
-    margin: 15px 10px;
-    padding: 0;
-}
-
-.profesores{
-    font-size: 30px;
-    margin: auto;
 }
 
 }
