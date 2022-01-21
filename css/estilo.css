@@ -605,6 +605,10 @@ legend {
   .botones {
     width: 100px; } }
 
+@media only screen and (max-width: 600px) {
+  .carousel p {
+    font-size: 15px; } }
+
 @media only screen and (max-width: 360px) {
   .titulo, .subtitulo, .profesores, .adsTexto {
     font-size: 20px; }
